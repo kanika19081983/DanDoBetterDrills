@@ -42,7 +42,7 @@ public class TestStringUtilities {
         // : Given
         int one = 1;
         String two = " Java";
-        String expected = "null";
+        String expected = "1 Java";
 
         // : When
         String actual = StringUtilities.concatenation(one,two);
