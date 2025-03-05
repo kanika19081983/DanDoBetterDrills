@@ -1,5 +1,7 @@
 package com.zipcodewilmington.danny_do_better_exercises;
 
+import javax.swing.text.AttributeSet;
+
 /**
  * Modified by kristofer 3/4/2024.
  */
@@ -49,7 +51,7 @@ public class StringUtilities {
      */
     public static String getSuffix(String input){
 
-        return null;
+        return input.substring(input.length()-3);
     }
 
     /**
@@ -58,7 +60,9 @@ public class StringUtilities {
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
-        return null;
+
+        return (inputValue.equals(comparableValue));
+
     }
 
     /**
@@ -66,7 +70,8 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
-        return null;
+
+        return inputValue.charAt((inputValue.length()-1) / 2);
     }
 
     /**
@@ -74,7 +79,8 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        return null;
+
+        return spaceDelimitedString.split(" ")[0];
     }
 
     /**
@@ -82,7 +88,7 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        return null;
+        return spaceDelimitedString.split(" ") [1];
     }
 
     /**
@@ -90,6 +96,6 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+        return new StringBuilder(stringToReverse).reverse().toString();
     }
 }
